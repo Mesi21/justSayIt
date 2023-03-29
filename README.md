@@ -1,3 +1,5 @@
+...SOON TO BE UPDATED...
+
 # Just Say It App - with Rails
 Just Say It is a classic example of a blog. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
