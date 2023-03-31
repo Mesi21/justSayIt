@@ -131,7 +131,7 @@ To run tests, run the following command:
 ```sh
   rails test
 ```
--RSpec:
+- RSpec:
 ```sh
   rspec spec
 ```
