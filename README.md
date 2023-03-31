@@ -1,55 +1,185 @@
-# Just Say It App - with Rails
-Just Say It is a classic example of a blog. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+<a name="readme-top"></a>
 
-## Built With
-- Ruby
-- Rails 7
-- Rubocop, Rspecs, Style Lint
+# 📗 Table of Contents
 
-## Getting Started
-To get a local copy up and running follow these simple example steps.
-``bash
-$ clone repo |
-$ cd into repo |
-$ bundle install |
-$ npm install |
-$ rails db:migrate
-``
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  <!-- - [🚀 Live Demo](#live-demo) -->
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  <!-- - [Deployment](#triangular_flag_on_post-deployment) -->
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+
+# 📖 Just Say It App - with Rails <a name="about-project"></a>
+
+** Just Say It App is a classic example of a blog. It shows the list of posts and empower readers to interact with them by adding comments and liking posts
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- Classic Blog App
+- Users can make posts
+- Users can make comments on the posts
+- Users can add likes to posts or comments
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO 
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+-->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Before you install Rails, make sure that your system has the proper prerequisites installed. These include:
+
+- Ruby installed and running.
+- PostgreSQL installed and running.
+
+Afterwards run this in your terminal:
+```
+ gem install rails
+```
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:Mesi21/justSayIt.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd justSayIt
+  bundle install
+```
+
 
 ### Usage
-rails s
-Run tests
-Deployment
 
-## Prerequisites
-- Ruby and Rails
-- NodeJs
+To run the project, execute the following command:
 
-# Live Demo
+```sh
+  rails server
+  or
+  rails s
+  and open localhost
+  http://127.0.0.1:3000/
+```
 
-## Author
+### Run tests
 
-#### :bust_in_silhouette: Molnar Emese 
-  - [Mesi21](https://github.com/Mesi21)
-  - [LinkedIn](https://www.linkedin.com/in/emesemesimolnar/)  
-  - [Twitter](https://twitter.com/buksimesi21) 
+To run tests, run the following command:
+
+- MiniTest:
+```sh
+  rails test
+```
+-RSpec:
+```sh
+  rspec spec
+```
+
+## 👥 Author<a name="authors"></a>
+
+👤 **Molnar Emese**
+  - GitHub: [@Mesi21](https://github.com/Mesi21)
+  - Twitter: [@buksimesi21](https://twitter.com/buksimesi21)  
+  - LinkedIn: [LinkedIn] (https://www.linkedin.com/in/emesemesimolnar/)
 
 
-# Contributions
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- DB optimization
+- Update the UI
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-1. Fork it (https://github.com/Mesi21/justSayIt.git)
-2. Create your working branch (git checkout -b [choose-a-name])
-3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
-4. Push to the branch (git push origin [chosen-name])
-5. Create a new Pull Request
 
-Feel free to check the [issues](https://github.com/Mesi21/justSayIt/issues) page.
+Feel free to check the [issues page]https://github.com/Mesi21/justSayIt/issues
 
-#  Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Show your support
-Give a :star: if you liked the app
+## ⭐️ Show your support <a name="support"></a>
 
-# License
+
+If you like this project, please give it a :star: 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank everyone who reviewed this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
 This project is [MIT](license.txt) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
