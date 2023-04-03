@@ -8,6 +8,15 @@ RSpec.describe 'Posts', type: :request do
     it 'gets all posts from the user' do
       get '/users/1/posts'
       expect(response).to have_http_status(:success)
+    end
+
+    it 'renders the template for show action' do
+      get '/users/1/posts'
+      expect(response).to render_template(:index)
+    end
+
+    it 'gets the correct content of the page' do
+      get '/users/1/posts'
       expect(response.body).to include('List of all posts')
     end
   end
@@ -20,9 +29,18 @@ RSpec.describe 'Posts', type: :request do
     before { subject.save }
     before { post.save }
 
+    it 'checks if the http status is success' do
+      get '/users/1/posts/1'
+      expect(response).to have_http_status(:success)
+    end
+
     it 'renders the template for show action' do
       get '/users/1/posts/1'
       expect(response).to render_template(:show)
+    end
+
+    it 'gets the correct content of the page' do
+      get '/users/1/posts/1'
       expect(response.body).to include('First post')
     end
   end
