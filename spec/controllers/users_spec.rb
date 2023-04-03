@@ -9,12 +9,14 @@ RSpec.describe 'Users', type: :request do
       get '/users'
       expect(response.status).to eq(200)
       expect(response).to render_template('index')
+      expect(response.body).to include('List of')
     end
 
     it 'renders the show page with user details' do
       get '/users/1'
       expect(response.status).to eq(200)
       expect(response).to render_template('show')
+      expect(response.body).to include('Info about')
     end
   end
 end

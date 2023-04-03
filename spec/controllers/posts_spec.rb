@@ -8,6 +8,7 @@ RSpec.describe 'Posts', type: :request do
     it 'gets all posts from the user' do
       get '/users/1/posts'
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('List of all posts')
     end
   end
 
@@ -22,6 +23,7 @@ RSpec.describe 'Posts', type: :request do
     it 'renders the template for show action' do
       get '/users/1/posts/1'
       expect(response).to render_template(:show)
+      expect(response.body).to include('First post')
     end
   end
 end
