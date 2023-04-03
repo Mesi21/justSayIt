@@ -13,7 +13,8 @@ RSpec.describe 'Posts', type: :request do
 
   describe 'GET /show' do
     subject { User.new(name: 'Mesi', photo: 'https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk', bio: 'Web developer from Romania.') }
-    post = Post.new(title: 'Sunshine blessing', text: 'The sun slowly rises on the horizon', comments_counter: 5, likes_counter: 3, author_id: 1)
+    post = Post.new(title: 'Sunshine blessing', text: 'The sun slowly rises on the horizon', comments_counter: 5,
+                    likes_counter: 3, author_id: 1)
     subject { post }
     before { subject.save }
     before { post.save }
